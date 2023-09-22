@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StringManipulation {
     public static void main(String[] args) {
         String str = "The rains have started here selenium";
@@ -28,6 +30,13 @@ public class StringManipulation {
 
         // Substring
         System.out.println(str.substring(0,str.length()));
+
+        //String Replace
+        System.out.println("01-01-2017".replaceAll("-", "/"));
+
+        // Split
+        String[] arr = "Hello_World_Java".split("_");
+        System.out.println(Arrays.toString(arr));
     }
 
 }
